@@ -27,7 +27,7 @@ The implementation includes:
 - `ActorNet`: Defines the policy model using a squashed Gaussian distribution.
 - `CriticNet`: Evaluates the quality of actions taken by the actor.
 - `ValueNet`: Estimates the value of states.
-- `IQLAgent`: Orchestrates the training of the Actor, Critic, and Value networks.
+- `IQLAgent`: Coordinates the training of the Actor, Critic, and Value networks.
 
 ## Dependencies
 Ate the Beginning of each Notebook is a Installation Section to install everything needed within this Notebook.
