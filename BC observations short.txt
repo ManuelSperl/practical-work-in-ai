@@ -1,0 +1,40 @@
+<div id='bc_observations'>
+
+### Observations 
+
+The results of your Behavioral Cloning (BC) model training and evaluation on different datasets show significant variation in performance. Let's interpret these results:
+
+- *Random_dataset:*
+
+  - <u>Training Loss:</u> The training loss for the BC model on the Random dataset shows consistent improvement across trials, indicating that the model is effectively learning the random behavior patterns. The convergence of loss across different trials suggests good stability in the learning process.
+  - <u>Test Loss:</u> The test loss exhibits significant variability across epochs, reflecting the inherently unpredictable outcomes when the model is exposed to unseen data from a random behavior set.
+  - <u>Rewards per Epoch:</u> The reward metrics oscillate widely, which aligns with the expectations from a dataset generated through random actions. This variability further underscores the challenge of learning effective behaviors from non-strategic, random actions.
+
+- *Expert_dataset:*
+
+  - <u>Training Loss:</u> The training loss decreases sharply and remains very low, indicating that the BC model quickly learns to mimic the expert behavior effectively.
+  - <u>Test Loss:</u> There is some fluctuation in the test loss across epochs, which may suggest overfitting to the training data or inherent differences in the scenarios between the training and testing datasets. 
+  - <u>Rewards per Epoch:</u> The rewards show a generally increasing trend across epochs, demonstrating that the model's behavior progressively aligns more closely with effective strategies exemplified by the expert data.
+
+- *Mixed_dataset:*
+
+  - <u>Training Loss:</u> The training loss for the BC model on the Mixed dataset decreases quickly and stabilizes at a low level, indicating effective learning from a combination of expert and random actions. 
+  - <u>Test Loss:</u> The test loss displays more fluctuations compared to the training loss, likely due to the variability introduced by the mixed nature of the dataset.
+  - <u>Rewards per Epoch:</u> The rewards exhibit significant variability, reflecting the challenges the model faces in consistently replicating effective actions from a dataset containing both expert and random behaviors. 
+
+- *Noisy_dataset:*
+
+  - <u>Training Loss:</u> The BC model achieves a significant reduction in training loss on the Noisy dataset, suggesting that it can adapt to and learn from even noisy or imperfect input data.
+  - <u>Test Loss:</u> The test loss shows considerable variation between epochs, which is expected given the stochastic nature of the noisy data.
+  - <u>Rewards per Epoch:</u> The rewards graph shows an overall upward trend, indicating that the model gradually learns to perform better even with the noisy data.
+
+- *Replay_dataset:*
+
+  - <u>Training Loss:</u> The training loss for the Replay dataset sharply decreases and approaches zero, indicating that the BC model effectively learns from consistent replay of expert behaviors.
+  - <u>Test Loss:</u> The test loss, while generally low, shows some fluctuation, suggesting variations in the complexity or difficulty of the test scenarios compared to the training data.
+  - <u>Rewards per Epoch:</u> The rewards display significant swings across epochs, yet the overall trajectory suggests an improvement in the model's performance over time. 
+
+
+Overall, the Behavioral Cloning model demonstrated varying degrees of success across different datasets, dealing structured expert data and facing challenges with mixed and noisy inputs. These results underscore the importance of data quality in training AI models, revealing how the nature of the data directly impacts the model's ability to learn and generalize effectively.
+
+</div>
